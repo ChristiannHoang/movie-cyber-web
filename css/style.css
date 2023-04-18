@@ -24,6 +24,7 @@ header {
     top: 20px;
     left: 0;
     right: 0;
+    z-index: 99;
 }
 
 header .content {
@@ -56,4 +57,116 @@ header .topbar__text {
     color: var(--white-color);
     padding: 20px 24px;
     letter-spacing: 3px;
+}
+
+#navbarMovie .active.nav-item::after {
+    width: 100%;
+}
+
+header .navbar__icon {
+    color: var(--primary-color);
+    opacity: 0.7;
+}
+
+/* CAROUSEL  */
+#mainCarousel .carousel-item:nth-child(1):after {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/hero-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+#mainCarousel .carousel-item:nth-child(2):after {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/hero-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+#mainCarousel .carousel-item:nth-child(3):after {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/hero-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+#mainCarousel .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top, black, transparent);
+}
+
+#mainCarousel .carousel-caption {
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.carousel-caption__cateFilm {
+    color: #fbbd61;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.carousel-caption__nameFilm {
+    font-size: 52px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.carousel-caption__desrFilm {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.carousel-caption__action span {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid var(--white-color);
+    font-size: 13px;
+    text-align: center;
+    line-height: 48px;
+}
+
+.carousel-caption__action .btn {
+    font-size: 13px;
+    letter-spacing: 4px;
+    padding: 12px 24px;
+    border-radius: 30px;
+    background-image: var(--primay-bg-color);
+    color: var(--white-color);
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.carousel-caption__action .btn::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 400px;
+    height: 200px;
+    transform: rotate(45deg);
+    top: 0  ;
+    left: -150%;
+}
+
+.carousel-caption__action .btn:hover::after {
+    top: 
 }

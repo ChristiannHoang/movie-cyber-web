@@ -32,7 +32,7 @@
 
 <body>
     <!-- HEADER  -->
-    <header class="bg-black container-md">
+    <header class="container-md">
         <div class="header__topbar d-flex justify-content-end">
             <div class="content text-white">
                 <i class="topbar__icon fa-solid fa-phone"></i>
@@ -45,13 +45,13 @@
                 <a class="navbar-brand" href="#">
                     <img src="./img/logo.svg" alt="" class="navbar__logo img-fluid">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMovie"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="navbar__icon fa-solid fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarMovie">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
+                    <ul class="navbar-nav text-sm-center ms-auto">
+                        <li class="nav-item active">
                             <a class="nav-link" aria-current="page" href="#">HOME</a>
                         </li>
                         <li class="nav-item">
@@ -73,7 +73,38 @@
     </header>
 
     <!-- CAROUSEL  -->
-    <section class="myCarousel"></section>
+    <section class="myCarousel">
+        <div id="mainCarousel" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="overlay"></div>
+                    <div class="carousel-caption container-md text-start">
+                        <div class="col-12 col-lg-9 p-0">
+                            <p class="carousel-caption__cateFilm m-0">ACTION, ADVENTURE, FANTASY</p>
+                            <h5 class="carousel-caption__nameFilm">End of the World: Part I</h5>
+                            <p class="carousel-caption__desrFilm">Claritas est etiam processus dynamicus, qui sequitur
+                                mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc
+                                putamu.</p>
+                            <div class="carousel-caption__action">
+                                <span class="d-inline-block me-2">PG</span>
+                                <div class="btn">
+                                    <i class="fa-solid fa-play"></i>
+                                    PLAY TRAILER
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- NEW IN  -->
     <section class="newIn"></section>
