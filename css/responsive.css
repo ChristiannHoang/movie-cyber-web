@@ -1,7 +1,24 @@
+@media screen and (max-width: 575.98px) {
+    .carousel-caption__nameFilm {
+        font-size: 40px;
+    }
+}
+
+
 @media screen and (max-width: 767.98px) {
     #navbarMovie .navbar-nav {
         background-color: rgba(0, 0, 0, .9);
     }
+
+    #navbarMovie .active.nav-item::after {
+        width: 0;
+    }
+
+    #navbarMovie .active.nav-item .nav-link {
+        color: var(--primary-color);
+    }
+
+    
 }
 
 @media (max-width: 991.98px) {

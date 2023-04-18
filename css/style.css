@@ -17,6 +17,31 @@ html, body {
     color: #717171;
 }
 
+.section {
+    padding: 75px 0;
+}
+
+.section-heading {
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 40px;
+}
+
+.section-heading::after {
+    content: '';
+    display: block;
+    width: 125px;
+    height: 4px;
+    background-image: var(--primay-bg-color);
+    margin-top: 20px;
+}
+
+.section-heading h2 {
+    font-size: 18px;
+    color: var(--primary-color);
+    letter-spacing: 1.7px;
+}
+
+
 /* ---------------------------- */
 /* HEADER CSS*/
 header {
@@ -25,11 +50,24 @@ header {
     left: 0;
     right: 0;
     z-index: 99;
+    transition: top .5s;
 }
 
 header .content {
     font-size: 14px;
     font-weight: 700;
+}
+
+header .topbar__icon,  header .topbar__text {
+    cursor: pointer;
+}
+
+header .navbar-toggler {
+    border: none;
+}
+
+header .navbar-toggler:focus {
+    box-shadow: none;
 }
 
 header .topbar__text {
@@ -121,6 +159,7 @@ header .navbar__icon {
     color: #fbbd61;
     font-size: 14px;
     letter-spacing: 2px;
+    animation-delay: 0.5s;
 }
 
 .carousel-caption__nameFilm {
@@ -134,6 +173,10 @@ header .navbar__icon {
     margin-bottom: 20px;
 }
 
+.carousel-caption__action {
+    animation-delay: 0.5s;
+}
+
 .carousel-caption__action span {
     width: 48px;
     height: 48px;
@@ -145,14 +188,13 @@ header .navbar__icon {
 }
 
 .carousel-caption__action .btn {
-    font-size: 13px;
-    letter-spacing: 4px;
-    padding: 12px 24px;
-    border-radius: 30px;
     background-image: var(--primay-bg-color);
-    color: var(--white-color);
+    border-radius: 30px;
+    padding: 12px 24px;
+    outline: none;
+    border: none;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .carousel-caption__action .btn::after {
@@ -160,13 +202,129 @@ header .navbar__icon {
     display: block;
     position: absolute;
     background-color: var(--primary-color);
-    width: 400px;
-    height: 200px;
-    transform: rotate(45deg);
-    top: 0  ;
-    left: -150%;
+    width: 120%;
+    height: 100%;
+    top: 0;
+    left: -15px;
+    transform: skewX(30deg) translateX(-100%);
+    transition: all .5s;
+}
+
+.carousel-caption__action .btn__title {
+    text-decoration: none;
+    color: var(--white-color);
+    position: relative;
+    z-index: 1;
+    letter-spacing: 4px;
+    font-size: 13px;
 }
 
 .carousel-caption__action .btn:hover::after {
-    top: 
+    transform: skewX(30deg) translateX(-5%);
+}
+
+#mainCarousel .carousel-indicators {
+    left: 50%;
+    transform: translateX(-50%);
+    padding-left: 12px;
+    bottom: 15%;
+}
+
+#mainCarousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid var(--white-color);
+    opacity: 1;
+}
+
+#mainCarousel .carousel-indicators button.active {
+    background-color: white;
+}
+
+/* NEW IN  */
+.newIn__content .card {
+    border: none;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.newIn__content .card__img {
+    position: relative;
+}
+
+.newIn__content .overlay {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -300%;
+    width: 180%;
+    height: 100%;
+    background-image: var(--primay-bg-color);
+    transform: skew(30deg);
+    transition: all .5s;
+    opacity: 0.9;
+}
+
+.newIn__content .card__img:hover .overlay {
+    left: -40%;
+}
+
+.newIn__content .card__play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: 0;
+    transition: all .5s;
+}
+
+.newIn__content .card__img:hover .card__play {
+    opacity: 1;
+    visibility: 1;
+}
+
+.newIn__content .card__play-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    border: 1px solid white;
+    transition: all .5s;
+}
+
+.newIn__content .card__play-icon:hover {
+    transform: scale(0.9);
+}
+
+.newIn__content .card__play a {
+    text-decoration: none;
+    color: white;
+}
+
+.newIn__content .card__play-read-more {
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+.newIn__content .card-body {
+    padding: 0;
+    text-align: center;
+}
+
+.newIn__content .card-text {
+    margin-bottom: 16px;
+    color: #fbbd61;
+}
+
+.newIn__content .card-title {
+    font-size: 18px;
+    color: #4a4a4a;
+    margin: 16px 0;
 }

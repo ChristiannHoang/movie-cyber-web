@@ -23,6 +23,9 @@
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
 
+    <!-- ANIMATION  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!-- MAIN CSS  -->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -74,8 +77,8 @@
 
     <!-- CAROUSEL  -->
     <section class="myCarousel">
-        <div id="mainCarousel" class="carousel slide">
-            <div class="carousel-indicators">
+        <div id="mainCarousel" class="carousel slide carousel-fade">
+            <div class="carousel-indicators container m-0 justify-content-start">
                 <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -86,28 +89,190 @@
                     <div class="overlay"></div>
                     <div class="carousel-caption container-md text-start">
                         <div class="col-12 col-lg-9 p-0">
-                            <p class="carousel-caption__cateFilm m-0">ACTION, ADVENTURE, FANTASY</p>
-                            <h5 class="carousel-caption__nameFilm">End of the World: Part I</h5>
-                            <p class="carousel-caption__desrFilm">Claritas est etiam processus dynamicus, qui sequitur
+                            <p class="carousel-caption__cateFilm m-0 animate__animated animate__fadeInDown">ACTION,
+                                ADVENTURE, FANTASY</p>
+                            <h5 class="carousel-caption__nameFilm animate__animated animate__fadeInDown">End of the
+                                World: Part I</h5>
+                            <p class="carousel-caption__desrFilm animate__animated animate__fadeInUp">Claritas est etiam
+                                processus dynamicus, qui sequitur
                                 mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc
                                 putamu.</p>
-                            <div class="carousel-caption__action">
+                            <div class="carousel-caption__action animate__animated animate__fadeInUp">
                                 <span class="d-inline-block me-2">PG</span>
                                 <div class="btn">
-                                    <i class="fa-solid fa-play"></i>
-                                    PLAY TRAILER
+                                    <a href="" class="btn__title">
+                                        <i class="fa-solid fa-play"></i>
+                                        PLAY TRAILER
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <div class="carousel-item">
+                    <div class="overlay"></div>
+                    <div class="carousel-caption container-md text-start">
+                        <div class="col-12 col-lg-9 p-0">
+                            <p class="carousel-caption__cateFilm m-0 animate__animated animate__fadeInDown">ACTION,
+                                ADVENTURE, FANTASY</p>
+                            <h5 class="carousel-caption__nameFilm animate__animated animate__fadeInDown">End of the
+                                World: Part II</h5>
+                            <p class="carousel-caption__desrFilm animate__animated animate__fadeInUp">Claritas est etiam
+                                processus dynamicus, qui sequitur
+                                mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc
+                                putamu.</p>
+                            <div class="carousel-caption__action animate__animated animate__fadeInUp">
+                                <span class="d-inline-block me-2">PG</span>
+                                <div class="btn">
+                                    <a href="" class="btn__title">
+                                        <i class="fa-solid fa-play"></i>
+                                        PLAY TRAILER
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay"></div>
+                    <div class="carousel-caption container-md text-start">
+                        <div class="col-12 col-lg-9 p-0">
+                            <p class="carousel-caption__cateFilm m-0 animate__animated animate__fadeInDown">ACTION,
+                                ADVENTURE, FANTASY</p>
+                            <h5 class="carousel-caption__nameFilm animate__animated animate__fadeInDown">End of the
+                                World: Part III</h5>
+                            <p class="carousel-caption__desrFilm animate__animated animate__fadeInUp">Claritas est etiam
+                                processus dynamicus, qui sequitur
+                                mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc
+                                putamu.</p>
+                            <div class="carousel-caption__action animate__animated animate__fadeInUp">
+                                <span class="d-inline-block me-2">PG</span>
+                                <div class="btn">
+                                    <a href="" class="btn__title">
+                                        <i class="fa-solid fa-play"></i>
+                                        PLAY TRAILER
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- NEW IN  -->
-    <section class="newIn"></section>
+    <section class="newIn section">
+        <div class="container">
+            <div class="section-heading">
+                <h2>NEW IN</h2>
+            </div>
+            <div class="newIn__content">
+                <div class="row">
+                    <div class="col-6 col-md-3">
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./img/movie-1.jpg" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card__play d-flex text-center align-items-center justify-content-center">
+                                    <div class="text-white">
+                                        <a href="#"><i class="card__play-icon fa-solid fa-play"></i></a>
+                                        <a class="d-block my-3 card__play-read-more" href="#">READ MORE</a>
+                                        <p>Released: 7 Mar, 2017</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">The last post</h5>
+                                <p class="card-text">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./img/movie-2.jpg" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card__play d-flex text-center align-items-center justify-content-center">
+                                    <div class="text-white">
+                                        <a href="#"><i class="card__play-icon fa-solid fa-play"></i></a>
+                                        <a class="d-block my-3 card__play-read-more" href="#">READ MORE</a>
+                                        <p>Released: 7 Mar, 2017</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Dark and lonely</h5>
+                                <p class="card-text">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./img/movie-3.jpg" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card__play d-flex text-center align-items-center justify-content-center">
+                                    <div class="text-white">
+                                        <a href="#"><i class="card__play-icon fa-solid fa-play"></i></a>
+                                        <a class="d-block my-3 card__play-read-more" href="#">READ MORE</a>
+                                        <p>Released: 7 Mar, 2017</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Venture</h5>
+                                <p class="card-text">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card">
+                            <div class="card__img">
+                                <img src="./img/movie-4.jpg" class="card-img-top" alt="...">
+                                <div class="overlay"></div>
+                                <div class="card__play d-flex text-center align-items-center justify-content-center">
+                                    <div class="text-white">
+                                        <a href="#"><i class="card__play-icon fa-solid fa-play"></i></a>
+                                        <a class="d-block my-3 card__play-read-more" href="#">READ MORE</a>
+                                        <p>Released: 7 Mar, 2017</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Hush</h5>
+                                <p class="card-text">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- SHOW TIMES  -->
     <section class="showTimes"></section>
