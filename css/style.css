@@ -550,6 +550,7 @@ header .navbar__icon {
 .movie__item {
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .movieList .overlay {

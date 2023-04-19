@@ -94,4 +94,9 @@
     .comingSoon__right {
         margin-top: 16px;
     }
+
+    /* MOVIE  */
+    .movie__item img {
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    }
 }
