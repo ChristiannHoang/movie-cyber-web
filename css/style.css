@@ -537,3 +537,33 @@ header .navbar__icon {
 .comingSoon__right a:hover .play-icon {
     transform: translate(-50%, -50%) scale(0.9);
 }
+
+/* MOVIE LIST  */
+.movieList {
+    background-color: #101010;
+}
+
+.movieList img {
+    border-radius: 10px;
+}
+
+.movie__item {
+    position: relative;
+    overflow: hidden;
+}
+
+.movieList .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #101010;
+    opacity: 0.6;
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.movie__item:hover .overlay {
+    opacity: 0;
+}
