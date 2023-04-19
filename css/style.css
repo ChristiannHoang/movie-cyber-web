@@ -1,6 +1,4 @@
 * {
-    --white-color: #fff;
-    --black-color: #000;
     --primary-color: #ec7532;
     --primay-bg-color: linear-gradient(to right, #fbbd61, #ec7532);
 }
@@ -92,7 +90,7 @@ header .topbar__text {
 }
 
 #navbarMovie .nav-link {
-    color: var(--white-color);
+    color: white;
     padding: 20px 24px;
     letter-spacing: 3px;
 }
@@ -181,7 +179,7 @@ header .navbar__icon {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    border: 2px solid var(--white-color);
+    border: 2px solid white;
     font-size: 13px;
     text-align: center;
     line-height: 48px;
@@ -212,7 +210,7 @@ header .navbar__icon {
 
 .carousel-caption__action .btn__title {
     text-decoration: none;
-    color: var(--white-color);
+    color: white;
     position: relative;
     z-index: 1;
     letter-spacing: 4px;
@@ -235,7 +233,7 @@ header .navbar__icon {
     height: 10px;
     border-radius: 50%;
     background-color: transparent;
-    border: 2px solid var(--white-color);
+    border: 2px solid white;
     opacity: 1;
 }
 
@@ -471,3 +469,71 @@ header .navbar__icon {
     top: -1px;
 }
 
+/* COMING SOON  */
+.comingSoon {
+    background: #101010  url('../img/slide-3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.comingSoon .section-heading {
+    border-color: #333;
+}
+
+.comingSoon .section-heading h2 {
+    color: white;
+}
+
+.comingSoon__left .film-cate {
+    color: var(--primary-color);
+    letter-spacing: 2px;
+}
+
+.comingSoon__left .film-name {
+    font-size: 34px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.comingSoon__left .film-vote__star {
+    color: #fbbd61;
+    font-size: 14px;
+}
+
+.comingSoon__left .film-btn {
+    text-decoration: none;
+    color: var(--primary-color);
+    letter-spacing: 4px;
+    font-size: 12px;
+    transition: all .5s;
+}
+
+.comingSoon__left .film-btn:hover {
+    color: white;
+}
+
+.comingSoon__right a {
+    position: relative;
+    text-decoration: none;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: white;
+    width: 80px;
+    height: 80px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    transition: all .5s;
+}
+
+.comingSoon__right a:hover .play-icon {
+    transform: translate(-50%, -50%) scale(0.9);
+}

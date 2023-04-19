@@ -42,6 +42,11 @@
     .showTimes .card__schedule .total-time {
         text-align: left;
     }
+
+    /* COMING SOON  */
+    .comingSoon__left .film-cate {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 575.98px) {
@@ -62,5 +67,18 @@
     .showTimes .card__schedule .view-time span:last-child {
         display: block;
         margin-bottom: 16px;
+    }
+
+    /* COMING SOON  */
+    .comingSoon__content {
+        display: block;
+    }
+
+    .comingSoon__left, .comingSoon__right {
+        width: 100%;
+    }
+
+    .comingSoon__right {
+        margin-top: 16px;
     }
 }
