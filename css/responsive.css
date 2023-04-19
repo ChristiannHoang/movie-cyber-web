@@ -18,7 +18,23 @@
         color: var(--primary-color);
     }
 
+    /* SHOW IN  */
+    .showTimes .nav-link span {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
     
+    .showTimes .active.nav-link::after {
+        width: 0;
+    }
+
+    .showTimes .active.nav-link span {
+        color: var(--primary-color);
+    }
+
+    .showTimes .card__schedule .total-time {
+        text-align: left;
+    }
 }
 
 @media (max-width: 991.98px) {

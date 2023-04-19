@@ -247,11 +247,16 @@ header .navbar__icon {
 .newIn__content .card {
     border: none;
     overflow: hidden;
-    border-radius: 10px;
 }
 
 .newIn__content .card__img {
     position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.newIn__content img {
+    border-radius: 10px;
 }
 
 .newIn__content .overlay {
@@ -328,3 +333,137 @@ header .navbar__icon {
     color: #4a4a4a;
     margin: 16px 0;
 }
+
+/* SHOW TIME  */
+.showTimes .nav {
+    border-bottom: 1px solid #d8d8d8;
+    /* padding-bottom: 15px; */
+}
+
+.showTimes .nav-item:hover::after {
+    width: 100%;
+}
+
+.showTimes .nav-link {
+    padding: 0;
+}
+
+.showTimes .nav-link span{
+    color: #4a4a4a;
+    padding: 15px 30px;
+    font-size: 18px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.showTimes .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background-image: var(--primay-bg-color); 
+    transition: all .5s;
+    box-shadow: 0 0 20px 0 #fbbd61;
+}
+
+.showTimes .nav-link:hover::after {
+    width: 100%;
+}
+
+.showTimes .active.nav-link {
+    background-color: transparent;
+    color: #4a4a4a;
+}
+
+.showTimes .active.nav-link::after {
+    width: 100%;
+}
+
+.showTimes .card {
+    border: none;
+    border-bottom: 1px solid #d8d8d8;     
+    border-radius: 0;
+}
+
+.showTimes .card__img {
+    border-radius: 10px;
+}
+
+.showTimes .card-body {
+    padding: 0;
+
+}
+
+.showTimes .card__cate {
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+.showTimes .card-title {
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+
+.showTimes .card-text {
+    color: #717171;
+}
+
+.showTimes .card_full-syno {
+    font-size: 12px;
+    color: var(--primary-color);
+    letter-spacing: 4px;
+    text-decoration: none;
+    transition: all .5s;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.showTimes .card_full-syno:hover {
+    color: #101010;
+}
+
+.showTimes .card__schedule {
+    font-size: 12px;
+    color: #4a4a4a;
+}
+
+.showTimes .card__schedule span {
+    letter-spacing: 1.5px;
+}
+
+.showTimes .card__schedule .btn-time {
+    font-size: 14px;
+    color: #717171;
+    letter-spacing: 2px;
+    background-color: #d8d8d8;
+    border: none;
+    transition: all .5s;
+}
+
+.showTimes .card__schedule .btn-time:hover {
+    color: #212529;
+}
+
+.showTimes .card__schedule .total-time {
+    text-align: right;
+    font-size: 12px;
+    color: #4a4a4a;
+    letter-spacing: 1.5px;
+}
+
+.showTimes .card__schedule .total-time span {
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 33px;
+    background-color: #4a4a4a;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: -1px;
+}
+
