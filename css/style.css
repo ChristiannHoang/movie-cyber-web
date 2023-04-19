@@ -567,3 +567,19 @@ header .navbar__icon {
 .movie__item:hover .overlay {
     opacity: 0;
 }
+
+/* CONTACT  */
+.contact {
+    background: white;
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #4a4a4a;
+}
+
+.contact__phone-num {
+    color: #fbbd61;
+    font-size: 46px;
+    text-decoration: none;
+    font-weight: 400;
+}
