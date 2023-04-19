@@ -1,11 +1,18 @@
-@media screen and (max-width: 575.98px) {
-    .carousel-caption__nameFilm {
-        font-size: 40px;
+@media (max-width: 991.98px) {
+    /* HEADER  */
+    header .navbar-brand {
+        max-width: 180px;
+    }
+
+    #navbarMovie .nav-link {
+        padding: 20px 14px;
+        font-size: 14px;
+        letter-spacing: 2px;
     }
 }
 
-
 @media screen and (max-width: 767.98px) {
+    /* HEADER  */
     #navbarMovie .navbar-nav {
         background-color: rgba(0, 0, 0, .9);
     }
@@ -18,7 +25,7 @@
         color: var(--primary-color);
     }
 
-    /* SHOW IN  */
+    /* SHOW TIME  */
     .showTimes .nav-link span {
         padding: 10px 20px;
         font-size: 16px;
@@ -37,14 +44,23 @@
     }
 }
 
-@media (max-width: 991.98px) {
-    header .navbar-brand {
-        max-width: 180px;
+@media screen and (max-width: 575.98px) {
+    /* CAROUSEL  */
+    .carousel-caption__nameFilm {
+        font-size: 40px;
     }
 
-    #navbarMovie .nav-link {
-        padding: 20px 14px;
-        font-size: 14px;
-        letter-spacing: 2px;
+    /* SHOW TIME  */
+    .showTimes.section {
+        padding-top: 0;
+    }
+
+    .showTimes .nav-link span {
+        padding: 10px 20px;
+    }
+
+    .showTimes .card__schedule .view-time span:last-child {
+        display: block;
+        margin-bottom: 16px;
     }
 }

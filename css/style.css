@@ -385,6 +385,10 @@ header .navbar__icon {
     border-radius: 0;
 }
 
+.showTimes .card:last-child {
+    border: none;
+}
+
 .showTimes .card__img {
     border-radius: 10px;
 }
