@@ -583,3 +583,42 @@ header .navbar__icon {
     text-decoration: none;
     font-weight: 400;
 }
+
+/* FOOTER  */
+footer {
+    background-color: #101010;
+}
+
+.footer__main {
+    /* border-bottom: 1px solid #fff; */
+}
+
+.footer__title {
+    font-size: 16px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.footer__item {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding: 3px 0;
+    letter-spacing: 1.5px;
+    transition: all .5s;
+}
+
+.footer__item:hover {
+    color: #fbbd61;
+}
+
+.footer__bottom {
+    border-top: 1px solid rgba(255,255,255,.1);
+    color: white;
+}
+
+.footer__item .footer__icon {
+    width: 25px;
+}
