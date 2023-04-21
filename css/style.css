@@ -72,10 +72,12 @@ header .topbar__text {
     border-right: 1px solid #dee2e6;
 }
 
+#navbarFixedMovie .navbar-nav,
 #navbarMovie .navbar-nav {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+#navbarFixedMovie .nav-item::after,
 #navbarMovie .nav-item::after {
     content: '';
     display: block;
@@ -86,16 +88,19 @@ header .topbar__text {
     box-shadow: 0 0 20px 0 #fbbd61;
 }
 
+#navbarFixedMovie .nav-item:hover::after,
 #navbarMovie .nav-item:hover::after {
     width: 100%;
 }
 
+#navbarFixedMovie .nav-link,
 #navbarMovie .nav-link {
     color: white;
     padding: 20px 24px;
     letter-spacing: 3px;
 }
 
+#navbarFixedMovie .active.nav-item::after,
 #navbarMovie .active.nav-item::after {
     width: 100%;
 }

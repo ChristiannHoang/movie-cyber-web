@@ -4,6 +4,7 @@
         max-width: 180px;
     }
 
+    #navbarFixedMovie .nav-link,
     #navbarMovie .nav-link {
         padding: 20px 14px;
         font-size: 14px;
@@ -13,14 +14,17 @@
 
 @media screen and (max-width: 767.98px) {
     /* HEADER  */
+    #navbarFixedMovie .navbar-nav,
     #navbarMovie .navbar-nav {
         background-color: rgba(0, 0, 0, .9);
     }
 
+    #navbarFixedMovie .active.nav-item::after,
     #navbarMovie .active.nav-item::after {
         width: 0;
     }
 
+    #navbarFixedMovie .active.nav-item .nav-link,
     #navbarMovie .active.nav-item .nav-link {
         color: var(--primary-color);
     }
