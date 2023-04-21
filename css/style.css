@@ -83,6 +83,7 @@ header .topbar__text {
     width: 0;
     background-image: var(--primay-bg-color);
     transition: all .5s;
+    box-shadow: 0 0 20px 0 #fbbd61;
 }
 
 #navbarMovie .nav-item:hover::after {
@@ -102,6 +103,13 @@ header .topbar__text {
 header .navbar__icon {
     color: var(--primary-color);
     opacity: 0.7;
+}
+
+/* HEADER FIXED  */
+.header__fixed {
+    position: fixed;
+    top: -120px;
+    background-color: #101010;
 }
 
 /* CAROUSEL  */
