@@ -9,7 +9,6 @@ window.onscroll = function() {scrollFunction()};
 
 
 // VENOBOX 
-new VenoBox();
 new VenoBox({
-    selector: ".vbox-item"
+    selector: ".my-video"
 });
